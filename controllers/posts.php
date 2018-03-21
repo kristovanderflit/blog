@@ -15,7 +15,7 @@ class posts extends Controller
         $this->users = get_all("SELECT * FROM users");
     }
 
-    fucntion view()
+    function view()
     {
         $post_id = $this->params[0];
         $this->post = get_one("SELECT * FROM post NATURAL JOIN user WHERE post_id='$post_id'");

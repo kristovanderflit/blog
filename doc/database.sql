@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 21, 2018 at 06:05 AM
+-- Generation Time: Mar 21, 2018 at 06:37 AM
 -- Server version: 5.6.39
 -- PHP Version: 7.0.27-0+deb9u1
 
@@ -14,8 +14,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `blog`
 --
-CREATE DATABASE IF NOT EXISTS `blog` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `blog`;
 
 -- --------------------------------------------------------
 
@@ -37,9 +35,9 @@ CREATE TABLE `post` (
 --
 
 INSERT INTO `post` (`post_id`, `post_subject`, `post_text`, `post_created`, `user_id`) VALUES
-(1, 'esimene postitus', 'orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2018-03-21 09:03:08', 1),
-(2, 'teine postitus', 'Name from the game is the forecasting... ', '2018-03-21 09:03:08', 1),
-(3, 'Testing...', 'Test from Kristo', '2018-03-21 09:21:12', 1);
+  (1, 'esimene postitus', 'orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2018-03-21 09:03:08', 1),
+  (2, 'teine postitus', 'Name from the game is the forecasting... ', '2018-03-21 09:03:08', 1),
+  (3, 'Testing...', 'Test from Kristo', '2018-03-21 09:21:12', 1);
 
 -- --------------------------------------------------------
 
@@ -62,32 +60,32 @@ CREATE TABLE `translations` (
 --
 
 INSERT INTO `translations` (`translation_id`, `phrase`, `language`, `translation`, `controller`, `action`) VALUES
-(1, 'Action', 'en', '{untranslated}', 'welcome', 'index'),
-(2, 'Server returned response in an unexpected format', 'en', '{untranslated}', 'global', 'global'),
-(3, 'Forbidden', 'en', '{untranslated}', 'global', 'global'),
-(4, 'Server returned an error', 'en', '{untranslated}', 'global', 'global'),
-(5, 'Action', 'en', '{untranslated}', 'halo', 'index'),
-(6, 'Logout', 'en', '{untranslated}', 'global', 'global'),
-(7, 'Settings', 'en', '{untranslated}', 'global', 'global'),
-(8, 'Logged in as', 'en', '{untranslated}', 'global', 'global'),
-(9, 'Log out', 'en', '{untranslated}', 'global', 'global'),
-(10, 'Action', 'et', '{untranslated}', 'welcome', 'index'),
-(11, 'Log out', 'et', '{untranslated}', 'global', 'global'),
-(12, 'Server returned response in an unexpected format', 'et', '{untranslated}', 'global', 'global'),
-(13, 'Forbidden', 'et', '{untranslated}', 'global', 'global'),
-(14, 'Server returned an error', 'et', '{untranslated}', 'global', 'global'),
-(15, 'Please sign in', 'et', '{untranslated}', 'global', 'global'),
-(16, 'Email', 'et', '{untranslated}', 'global', 'global'),
-(17, 'Password', 'et', '{untranslated}', 'global', 'global'),
-(18, 'Sign in', 'et', '{untranslated}', 'global', 'global'),
-(19, 'Please sign in', 'en', '{untranslated}', 'global', 'global'),
-(20, 'Email', 'en', '{untranslated}', 'global', 'global'),
-(21, 'Password', 'en', '{untranslated}', 'global', 'global'),
-(22, 'Sign in', 'en', '{untranslated}', 'global', 'global'),
-(23, 'Oops...', 'en', '{untranslated}', 'global', 'global'),
-(24, 'Close', 'en', '{untranslated}', 'global', 'global'),
-(25, 'Server returned an error. Please try again later ', 'en', '{untranslated}', 'global', 'global'),
-(26, 'Action', 'en', '{untranslated}', 'global', 'global');
+  (1, 'Action', 'en', '{untranslated}', 'welcome', 'index'),
+  (2, 'Server returned response in an unexpected format', 'en', '{untranslated}', 'global', 'global'),
+  (3, 'Forbidden', 'en', '{untranslated}', 'global', 'global'),
+  (4, 'Server returned an error', 'en', '{untranslated}', 'global', 'global'),
+  (5, 'Action', 'en', '{untranslated}', 'halo', 'index'),
+  (6, 'Logout', 'en', '{untranslated}', 'global', 'global'),
+  (7, 'Settings', 'en', '{untranslated}', 'global', 'global'),
+  (8, 'Logged in as', 'en', '{untranslated}', 'global', 'global'),
+  (9, 'Log out', 'en', '{untranslated}', 'global', 'global'),
+  (10, 'Action', 'et', '{untranslated}', 'welcome', 'index'),
+  (11, 'Log out', 'et', '{untranslated}', 'global', 'global'),
+  (12, 'Server returned response in an unexpected format', 'et', '{untranslated}', 'global', 'global'),
+  (13, 'Forbidden', 'et', '{untranslated}', 'global', 'global'),
+  (14, 'Server returned an error', 'et', '{untranslated}', 'global', 'global'),
+  (15, 'Please sign in', 'et', '{untranslated}', 'global', 'global'),
+  (16, 'Email', 'et', '{untranslated}', 'global', 'global'),
+  (17, 'Password', 'et', '{untranslated}', 'global', 'global'),
+  (18, 'Sign in', 'et', '{untranslated}', 'global', 'global'),
+  (19, 'Please sign in', 'en', '{untranslated}', 'global', 'global'),
+  (20, 'Email', 'en', '{untranslated}', 'global', 'global'),
+  (21, 'Password', 'en', '{untranslated}', 'global', 'global'),
+  (22, 'Sign in', 'en', '{untranslated}', 'global', 'global'),
+  (23, 'Oops...', 'en', '{untranslated}', 'global', 'global'),
+  (24, 'Close', 'en', '{untranslated}', 'global', 'global'),
+  (25, 'Server returned an error. Please try again later ', 'en', '{untranslated}', 'global', 'global'),
+  (26, 'Action', 'en', '{untranslated}', 'global', 'global');
 
 -- --------------------------------------------------------
 
@@ -110,7 +108,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `is_admin`, `password`, `email`, `deleted`, `name`) VALUES
-(1, 1, '$2y$10$vTje.ndUFKHyuotY99iYkO.2aHJUgOsy2x0RMXP1UmrTe6CQsKbtm', 'demo@example.com', 0, 'Demo User');
+  (1, 1, '$2y$10$vTje.ndUFKHyuotY99iYkO.2aHJUgOsy2x0RMXP1UmrTe6CQsKbtm', 'demo@example.com', 0, 'Demo User');
 
 --
 -- Indexes for dumped tables
